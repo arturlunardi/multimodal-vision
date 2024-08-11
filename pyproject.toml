@@ -1,0 +1,15 @@
+[tool.ruff.lint]
+select = ["I"] # isort
+ignore = [
+    "F401", # Unused Import
+    "E402", # Module level import not at top of cell
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+log_cli = "True"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+log_cli_format = "%(asctime)s %(levelname)s %(message)s"
+log_cli_level = "INFO"
